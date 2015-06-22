@@ -9,7 +9,7 @@ import javax.money.format.MonetaryAmountFormat;
 import org.javamoney.moneta.Money;
 import org.javamoney.moneta.format.MonetaryAmountFormatSymbols;
 import org.javamoney.moneta.format.MonetaryAmountSymbols;
-import org.javamoney.moneta.spi.MoneyProducer;
+import org.javamoney.moneta.function.MoneyProducer;
 
 /**
  * Created by otaviojava on 29/05/15.
@@ -22,6 +22,5 @@ public class MonetaryAmountFormatSymbolsExample3 {
         MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of("¤ ###,###.00",symbols, new MoneyProducer());
         CurrencyUnit currency = Monetary.getCurrency("BRL");
         String text = formater.format(Money.of(10_000_00, currency));//Mon 1,000,000.00
-        System.out.println(text);
     }
 }
