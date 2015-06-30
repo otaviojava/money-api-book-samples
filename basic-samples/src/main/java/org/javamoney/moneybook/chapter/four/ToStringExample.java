@@ -14,7 +14,7 @@ import java.util.Locale;
 /**
  * Created by otaviojava on 27/05/15.
  */
-public class ToStrimgExample {
+public class ToStringExample {
 
     public static void main(String[] args) {
         CurrencyUnit currency = Monetary.getCurrency(Locale.US);
