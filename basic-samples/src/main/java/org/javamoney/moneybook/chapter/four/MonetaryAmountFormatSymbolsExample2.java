@@ -17,9 +17,9 @@ import java.util.Locale;
 public class MonetaryAmountFormatSymbolsExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defafult = MonetaryAmountFormatSymbols.getDefafult();
-        MonetaryAmountSymbols amountSymbols = defafult.getAmountSymbols();
-        MonetaryAmountNumericInformation numericInformation = defafult.getNumericInformation();
+        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefafult();
+        MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
+        MonetaryAmountNumericInformation numericInformation = defaultFormat.getNumericInformation();
 
     }
 }
