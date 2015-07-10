@@ -28,12 +28,12 @@ public class PredicateMonetaryAmountMix {
         MonetaryAmount money5 = Money.of(8, dollar);
         MonetaryAmount money6 = Money.of(8, dollar);
 
-		List<MonetaryAmount> greaterThanZeroAndDollar = Stream
+		List<MonetaryAmount> greaterThanZeroAndIsReal = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.and(MonetaryFunctions.isCurrency(real)))
 				.collect(Collectors.toList());//[]
-		List<MonetaryAmount> greaterThanZeroOrDollar = Stream
+		List<MonetaryAmount> greaterThanZeroOrIsReal = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.or(MonetaryFunctions.isCurrency(real)))
