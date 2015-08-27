@@ -1,15 +1,8 @@
 package org.javamoney.moneybook.chapter.four;
 
-import org.javamoney.moneta.Money;
 import org.javamoney.moneta.format.MonetaryAmountFormatSymbols;
 import org.javamoney.moneta.format.MonetaryAmountNumericInformation;
 import org.javamoney.moneta.format.MonetaryAmountSymbols;
-
-import javax.money.CurrencyUnit;
-import javax.money.Monetary;
-import javax.money.MonetaryAmount;
-import javax.money.format.MonetaryAmountFormat;
-import java.util.Locale;
 
 /**
  * Created by otaviojava on 29/05/15.
@@ -17,7 +10,7 @@ import java.util.Locale;
 public class MonetaryAmountFormatSymbolsExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefafult();
+        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefault();
         MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
         MonetaryAmountNumericInformation numericInformation = defaultFormat.getNumericInformation();
 
