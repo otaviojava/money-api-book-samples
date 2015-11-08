@@ -1,12 +1,14 @@
 package org.javamoney.moneybook.chapter.three;
 
-import org.javamoney.moneta.Money;
-import org.javamoney.moneta.function.MonetaryOperators;
+import java.util.Locale;
 
 import javax.money.CurrencyUnit;
 import javax.money.Monetary;
 import javax.money.MonetaryAmount;
-import java.util.Locale;
+
+import org.javamoney.moneta.Money;
+import org.javamoney.moneta.convert.ConversionOperators;
+import org.javamoney.moneta.function.MonetaryOperators;
 
 /**
  * Created by otaviojava on 27/05/15.
@@ -24,6 +26,6 @@ public class MonetaryOperatorsExample {
         MonetaryAmount percentResult = money.with(MonetaryOperators.percent(20));//BRL 24.0462
         MonetaryAmount permilResult = money.with(MonetaryOperators.permil(100));//BRL 12.0231
         MonetaryAmount roundingResult = money.with(MonetaryOperators.rounding());//BRL 120.23
-        MonetaryAmount resultExchange = money.with(MonetaryOperators.exchange(dollar));//USD 120.231
+        MonetaryAmount resultExchange = money.with(ConversionOperators.exchange(dollar));//USD 120.231
     }
 }
